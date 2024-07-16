@@ -1,5 +1,6 @@
 pandas
-catboost
+catboost==1.2.0
 shap
 streamlit
 streamlit-shap
+numpy==1.21.6
