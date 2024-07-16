@@ -25,7 +25,7 @@ jobs:
 
     - name: Run Streamlit
       run: |
-        streamlit run app/prediction_model.py --server.headless true --server.enableCORS false --server.port 8501 &
+        streamlit run app/prediction_model.py --server.headless true --server.enableCORS false --server.enableXsrfProtection false --server.port 8501 &
         sleep 5m
 
     - name: Deploy to GitHub Pages
