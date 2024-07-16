@@ -25,11 +25,11 @@ jobs:
 
     - name: Run Streamlit
       run: |
-        streamlit run app/prediction_model.py --server.headless true --server.enableCORS false --server.port ${{ secrets.PORT }} &
+        streamlit run app/prediction_model.py --server.headless true --server.enableCORS false --server.port 8501 &
         sleep 5m
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        github_token: ${{ secrets.TOKEN }}
         publish_dir: ./  # Deploy the entire project folder to GitHub Pages
