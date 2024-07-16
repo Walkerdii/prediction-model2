@@ -3,4 +3,3 @@ catboost
 shap
 streamlit
 streamlit-shap
-numpy==1.21.4
